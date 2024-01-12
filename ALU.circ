@@ -514,6 +514,28 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <path d="M104,313 Q107,292 115,313" fill="none" stroke="#808080" stroke-width="2"/>
+      <rect fill="none" height="265" stroke="#000000" stroke-width="2" width="179" x="51" y="50"/>
+      <text font-family="SansSerif" font-size="12" font-weight="bold" text-anchor="middle" x="110" y="301">clk</text>
+      <text font-family="SansSerif" font-size="24" font-weight="bold" text-anchor="middle" x="145" y="245">Register File</text>
+      <text font-family="SansSerif" font-size="13" font-weight="bold" text-anchor="middle" x="63" y="116">rs</text>
+      <text font-family="SansSerif" font-size="13" font-weight="bold" text-anchor="middle" x="63" y="141">rt</text>
+      <text font-family="SansSerif" font-size="13" font-weight="bold" text-anchor="middle" x="67" y="168">rd</text>
+      <text font-family="SansSerif" font-size="13" font-weight="bold" text-anchor="middle" x="94" y="284">write data</text>
+      <text font-family="SansSerif" font-size="13" font-weight="bold" text-anchor="middle" x="197" y="84">data_rs</text>
+      <text font-family="SansSerif" font-size="13" font-weight="bold" text-anchor="middle" x="198" y="113">data_rt</text>
+      <text font-family="SansSerif" font-size="13" font-weight="bold" text-anchor="middle" x="141" y="67">RegWrite</text>
+      <circ-port height="8" pin="1470,630" width="8" x="46" y="106"/>
+      <circ-port height="8" pin="1460,890" width="8" x="46" y="136"/>
+      <circ-port height="8" pin="100,1060" width="8" x="46" y="276"/>
+      <circ-port height="10" pin="1680,490" width="10" x="225" y="75"/>
+      <circ-port height="10" pin="1670,770" width="10" x="225" y="105"/>
+      <circ-port height="8" pin="360,50" width="8" x="146" y="46"/>
+      <circ-port height="8" pin="560,1130" width="8" x="106" y="306"/>
+      <circ-port height="8" pin="100,510" width="8" x="46" y="166"/>
+      <circ-anchor facing="east" height="6" width="6" x="227" y="137"/>
+    </appear>
     <wire from="(360,790)" to="(360,860)"/>
     <wire from="(720,380)" to="(840,380)"/>
     <wire from="(1240,810)" to="(1470,810)"/>
@@ -817,6 +839,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(120,320)" to="(260,320)"/>
     <wire from="(1070,550)" to="(1070,780)"/>
     <wire from="(120,330)" to="(250,330)"/>
+    <wire from="(100,450)" to="(100,510)"/>
     <comp lib="0" loc="(1680,490)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -952,6 +975,14 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="REGwrite"/>
       <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="0" loc="(100,510)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="write register"/>
+      <a name="labelloc" val="south"/>
       <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
     <comp lib="0" loc="(1460,890)" name="Pin">
