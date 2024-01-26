@@ -49,4 +49,4 @@ def decodeInstructions(path):
         fWrite.write(decode(line) + "\n")        
         
 
-decodeInstructions("test.txt")
+decodeInstructions("test.txt.txt")
